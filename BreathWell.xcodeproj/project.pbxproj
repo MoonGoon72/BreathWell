@@ -11,6 +11,7 @@
 		F30A0EDF29A22B2900F70733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0EDE29A22B2900F70733 /* ContentView.swift */; };
 		F30A0EE129A22B2A00F70733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30A0EE029A22B2A00F70733 /* Assets.xcassets */; };
 		F30A0EE429A22B2A00F70733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30A0EE329A22B2A00F70733 /* Preview Assets.xcassets */; };
+		F30A0EEB29A2356200F70733 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0EEA29A2356200F70733 /* StopWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F30A0EDE29A22B2900F70733 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F30A0EE029A22B2A00F70733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F30A0EE329A22B2A00F70733 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F30A0EEA29A2356200F70733 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				F30A0EDC29A22B2900F70733 /* BreathWellApp.swift */,
 				F30A0EDE29A22B2900F70733 /* ContentView.swift */,
+				F30A0EEA29A2356200F70733 /* StopWatch.swift */,
 				F30A0EE029A22B2A00F70733 /* Assets.xcassets */,
 				F30A0EE229A22B2A00F70733 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30A0EEB29A2356200F70733 /* StopWatch.swift in Sources */,
 				F30A0EDF29A22B2900F70733 /* ContentView.swift in Sources */,
 				F30A0EDD29A22B2900F70733 /* BreathWellApp.swift in Sources */,
 			);
