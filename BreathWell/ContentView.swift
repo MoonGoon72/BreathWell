@@ -1,15 +1,8 @@
-//
-//  ContentView.swift
-//  BreathWell
-//
-//  Created by cnu on 2023/02/19.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     @State var isStartBreath: Bool = false
-    private var stopWatch: StopWatch = StopWatch()
+    var stopWatch: StopWatch = StopWatch()
     @State var elapsedTime: Double = 0
     
     private static var formatter: DateComponentsFormatter = {
@@ -21,6 +14,7 @@ struct ContentView: View {
         
         return formatter
     }()
+    @ObservedObject var stopwatch: Stopwatch2
     var body: some View {
         ZStack {
             Color("ButtonColor")
@@ -28,33 +22,25 @@ struct ContentView: View {
             VStack {
                 Spacer()
                     .frame(height: 70)
-                Text(elapsedTime.description)
+                Text(self.elapsedTimeStr(timeInterval: self.stopwatch.elapsedTime))
+//                Text(elapsedTime.description)
                     .bold()
                     .font(.system(size: 50))
                 Spacer()
                 
                 Button {
-                    isStartBreath.toggle()
-                    isStartBreath ? stopWatch.start() : stopWatch.stop()
+                    self.stopwatch.isRunning.toggle()
                 } label: {
                     ZStack {
                         Circle()
                             .frame(width: UIScreen.main.bounds.width * 0.5)
                             .foregroundColor(Color("BackgroundColor"))
-                        Text(isStartBreath ? "호흡 중지" : "호흡 시작")
-                            .font(.title)
-                            .foregroundColor(.black)
+                        self.playPauseText
                     }
                 }
                 HStack {
                     Button {
-                        elapsedTime = stopWatch.getElapsedTime()
-                    } label: {
-                        Text("Time elapsed")
-                    }
-
-                    Button {
-                        self.stopWatch.reset()
+                        self.stopwatch.reset()
                     } label: {
                         Text("Reset")
                     }
@@ -64,6 +50,12 @@ struct ContentView: View {
             .padding()
         }
     }
+    private var playPauseText: Text {
+        return Text(self.stopwatch.isRunning ? "호흡 중지" : "호흡 시작")
+            .font(.title)
+            .foregroundColor(.black)
+    }
+    
     private func elapsedTimeStr(timeInterval: TimeInterval) -> String {
         return ContentView.formatter.string(from: timeInterval) ?? ""
     }
@@ -71,6 +63,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(stopwatch: Stopwatch2())
     }
 }
