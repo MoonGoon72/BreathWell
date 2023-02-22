@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA28747B29A4876500CE6329 /* Stopwatch2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28747A29A4876500CE6329 /* Stopwatch2.swift */; };
+		BA28747D29A4878300CE6329 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28747C29A4878300CE6329 /* StopwatchView.swift */; };
 		F30A0EDD29A22B2900F70733 /* BreathWellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0EDC29A22B2900F70733 /* BreathWellApp.swift */; };
 		F30A0EDF29A22B2900F70733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0EDE29A22B2900F70733 /* ContentView.swift */; };
 		F30A0EE129A22B2A00F70733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30A0EE029A22B2A00F70733 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA28747A29A4876500CE6329 /* Stopwatch2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch2.swift; sourceTree = "<group>"; };
+		BA28747C29A4878300CE6329 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		F30A0ED929A22B2800F70733 /* BreathWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30A0EDC29A22B2900F70733 /* BreathWellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathWellApp.swift; sourceTree = "<group>"; };
 		F30A0EDE29A22B2900F70733 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				F30A0EDC29A22B2900F70733 /* BreathWellApp.swift */,
 				F30A0EDE29A22B2900F70733 /* ContentView.swift */,
 				F30A0EEA29A2356200F70733 /* StopWatch.swift */,
+				BA28747C29A4878300CE6329 /* StopwatchView.swift */,
+				BA28747A29A4876500CE6329 /* Stopwatch2.swift */,
 				F30A0EE029A22B2A00F70733 /* Assets.xcassets */,
 				F30A0EE229A22B2A00F70733 /* Preview Content */,
 			);
@@ -142,6 +148,8 @@
 			files = (
 				F30A0EEB29A2356200F70733 /* StopWatch.swift in Sources */,
 				F30A0EDF29A22B2900F70733 /* ContentView.swift in Sources */,
+				BA28747B29A4876500CE6329 /* Stopwatch2.swift in Sources */,
+				BA28747D29A4878300CE6329 /* StopwatchView.swift in Sources */,
 				F30A0EDD29A22B2900F70733 /* BreathWellApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
